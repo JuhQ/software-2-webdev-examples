@@ -1,0 +1,55 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 0 2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-page-title {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.smaller-image {
+  width: 60%;
+  align-self: center;
+}
+
+header img {
+  width: 50px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  text-align: center;
+}
+
+main {
+  background-color: lemonchiffon;
+  padding: 1rem;
+}
+
+.contact-container {
+  display: flex;
+  gap: 3rem;
+}
+
+.contact-container img {
+  max-width: 12rem;
+}
