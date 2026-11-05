@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="image" alt="alternative text" />
+    <br />
+    <a>this is link</a>
+    <p>Click the button below to see the event object in the console.</p>
+    <p id="hello">this is id paragraph</p>
+    <p class="hello">this is class paragraph</p>
+    <p id="myid" class="hello">this is class paragraph</p>
+    <button>Click me</button>
+    <script>
+      console.log(document.querySelectorAll("p"));
+      console.log(document.querySelector("#hello"));
+      console.log(document.getElementById("hello"));
+
+      console.log(document.querySelector(".hello"));
+      console.log(document.querySelector("#myid.hello"));
+      console.log(document.querySelector("p#myid.hello"));
+
+      const button = document.querySelector("button");
+      button.addEventListener("click", function (event) {
+        console.log(event);
+        event.target.style = "font-size: 60px; color: white; background: red";
+        event.target.innerText = "Wohoo, coffee time";
+        // alert("Element " + event.currentTarget.tagName + " was clicked");
+      });
+      button.addEventListener("mouseover", function (event) {
+        console.log(event);
+        event.target.style = "font-size: 30px; color: white; background: blue";
+        event.target.innerText = "mouseover is same as hover";
+        // alert("Element " + event.currentTarget.tagName + " was clicked");
+      });
+    </script>
+  </body>
+</html>
