@@ -1,0 +1,12 @@
+### Rest client vscode https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+### summaa kaksi query param arvoa yhteen
+GET http://127.0.0.1:3000/sum?number1=10&number2=50
+
+
+### GET metodilla haetaan viikon varma voittava lottorivi
+GET http://127.0.0.1:3000/viikon-lottorivi
+
+
+### metropolia.fi demo
+GET https://metropolia.fi
