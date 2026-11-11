@@ -21,5 +21,28 @@
         >Kuvan lähde</a
       >
     </p>
+
+    <figure>
+      <img />
+      <figcaption></figcaption>
+    </figure>
+
+    <script>
+      // yksinkertaistettu esimerkki ilman virheenkäsittelyä
+      async function showPics() {
+        const response = await fetch("pics.json"); // aloittaa latauksen
+        const images = await response.json(); // muunnetaan ladattu JSON-teksti JavaScript-olioksi / -taulukoksi
+
+        const name = images[1].name; // 'images'-taulukon toisen olion 'name'-ominaisuus
+        const description = images[1].description; // 'images'-taulukon toisen olion 'description'-ominaisuus
+        const address = images[1].address; // 'images'-taulukon toisen olion 'address'-ominaisuus
+
+        document.querySelector("img").src = address;
+        document.querySelector("img").alt = name;
+        document.querySelector("figcaption").innerText = description;
+      }
+
+      showPics(); // kutsutaan funktiota latauksen aloittamiseksi
+    </script>
   </body>
 </html>
